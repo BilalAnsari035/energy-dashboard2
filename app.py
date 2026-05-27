@@ -126,7 +126,7 @@ section[data-testid="stSidebar"] {
 
 @st.cache_data
 def load_data():
-    url = "https://owid-public.owid.io/data/energy/owid-energy-data.csv"
+    url = "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv"
     df = pd.read_csv(url)
     df = df[df['year'] >= 1990]
     return df
